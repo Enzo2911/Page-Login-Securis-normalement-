@@ -27,7 +27,9 @@ function verif_get() {
             ";
     }
     if(isset($_GET['logout'])) {
-        s²ssion_destroy();
+        if (session_start() == 1) {
+            session_destroy();
+        }
         $logout = $_GET['logout'];
         if($logout == 1)
             echo "<center> <p style='color:green'>Vos été maintenant déconnecté</p> </center>";
