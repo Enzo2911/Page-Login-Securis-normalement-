@@ -7,7 +7,6 @@ function verif_login() {
 }
 
 if(isset($_POST['logout'])) {
-    session_destroy();
     header('Location: index.php?logout=1');
 }
 

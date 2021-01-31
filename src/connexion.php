@@ -1,9 +1,8 @@
 <?php
-session_start();
 
 $host='localhost';
-$bd='NOM DE LA BD';
-$login='';
+$bd='guardiansv3';
+$login='root';
 $password='';
 
 try {
@@ -14,10 +13,6 @@ try {
 
 catch (Exception $e) {
      die ($e -> getMessage());
-}
-
-if($_SERVER['REQUEST_URI']) {
-    header('Location: index.php');
 }
 
 global $pdo;
