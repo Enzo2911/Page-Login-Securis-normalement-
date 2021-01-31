@@ -15,7 +15,7 @@ include_once('./src/verif.php');
         <div class="col-md-7">
                 <form action="./src/loginverif.php" method="POST" class="box">
                     <h1>Login</h1>
-                    <p class="text-muted"> Please enter your login and password!</p> <input type="text" name="user" placeholder="Username" required pattern="^[A-Za-z0-9-_ '-]+$" maxlenght="15"> <input type="password" name="password" placeholder="Password" required pattern="^\b(?!<).*$(?!>)\b"> <input type="submit" name="Done" value="Login">
+                    <p class="text-muted"> Please enter your login and password!</p> <input type="text" name="user" placeholder="Username" required pattern="^[A-Za-z0-9-_ '-]+$" maxlenght="15"> <input type="password" name="password" placeholder="Password" required pattern="^\b(?!<).*$(?!>)\b"> <input type="submit" name="" value="Login">
                     <?php
                         verif_get();
                     ?>
