@@ -5,12 +5,12 @@ body {
     background: linear-gradient(to right, #b92b27, #1565c0)
 }
 
-.box {
-    width: 500px;
+.box{
+    border-radius: 10%;
+    width: 400px;
     padding: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
     background: #191919;
     text-align: center;
     transition: 0.25s;
